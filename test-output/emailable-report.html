@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Default Suite</th></tr>
+<tr><td><a href="#t0">TestSeleniumWebDriver</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">4</td><td class="num">234</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestSeleniumWebDriver &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestHomePage</td><td><a href="#m0">testHomePage</a></td><td rowspan="1">1658857090394</td><td rowspan="1">1</td></tr><tr class="failedodd"><td rowspan="2">TestLoginPage</td><td><a href="#m1">testLoginFunctionalityWithInvalidCredentials</a></td><td rowspan="1">1658857090406</td><td rowspan="1">0</td></tr><tr class="failedodd"><td><a href="#m2">testLoginFunctionalityWithValidCredentials</a></td><td rowspan="1">1658857090411</td><td rowspan="1">0</td></tr><tr class="failedeven"><td rowspan="1">TestSignupPage</td><td><a href="#m3">verifySignupPage</a></td><td rowspan="1">1658857090240</td><td rowspan="1">141</td></tr><tr><th colspan="4">TestSeleniumWebDriver &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestDashboardPage</td><td><a href="#m4">verifyAllLinksOnDashboard</a></td><td rowspan="1">1658857090220</td><td rowspan="1">18</td></tr></tbody>
+</table>
+<h2>TestSeleniumWebDriver</h2><h3 id="m0">TestHomePage#testHomePage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at Utility.Utility.getPageTitle(Utility.java:40)
+	at WebPages.HomePage.verifyPageTitle(HomePage.java:22)
+	at TestHomePage.testHomePage(TestHomePage.java:9)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestLoginPage#testLoginFunctionalityWithInvalidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mike9890@mailinator.com</td><td>Tests123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException
+	at java.util.Objects.requireNonNull(Objects.java:203)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:106)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:45)
+	at Utility.Utility.waitForElement(Utility.java:22)
+	at Utility.Utility.clickOnElement(Utility.java:45)
+	at WebPages.HomePage.verifyStartForFreeBtn(HomePage.java:34)
+	at TestLoginPage.testLoginFunctionalityWithInvalidCredentials(TestLoginPage.java:32)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestLoginPage#testLoginFunctionalityWithValidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mike9890@mailinator.com</td><td>Mike123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException
+	at java.util.Objects.requireNonNull(Objects.java:203)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:106)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:45)
+	at Utility.Utility.waitForElement(Utility.java:22)
+	at Utility.Utility.enterTextInField(Utility.java:55)
+	at WebPages.LoginPage.verifyEmailField(LoginPage.java:32)
+	at TestLoginPage.testLoginFunctionalityWithValidCredentials(TestLoginPage.java:24)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestSignupPage#verifySignupPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at java.util.Objects.requireNonNull(Objects.java:203)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:106)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:45)
+	at Utility.Utility.waitForElement(Utility.java:22)
+	at Utility.Utility.clickOnElement(Utility.java:45)
+	at WebPages.HomePage.verifyStartForFreeBtn(HomePage.java:34)
+	at TestSignupPage.verifySignupPage(TestSignupPage.java:7)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">TestDashboardPage#verifyAllLinksOnDashboard</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

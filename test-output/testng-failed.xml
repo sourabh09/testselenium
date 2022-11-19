@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+  <test thread-count="5" name="TestSeleniumWebDriver(failed)">
+    <classes>
+      <class name="TestHomePage">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testHomePage"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- TestHomePage -->
+      <class name="TestLoginPage">
+        <methods>
+          <include name="testLoginFunctionalityWithValidCredentials" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testLoginFunctionalityWithInvalidCredentials" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TestLoginPage -->
+      <class name="TestSignupPage">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifySignupPage"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- TestSignupPage -->
+    </classes>
+  </test> <!-- TestSeleniumWebDriver(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->
