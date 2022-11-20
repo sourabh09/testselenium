@@ -1,10 +1,7 @@
 package InterFaces;
 
 import Utility.Utility;
-import WebPages.DashboardPage;
-import WebPages.HomePage;
-import WebPages.LoginPage;
-import WebPages.SignupPage;
+import WebPages.*;
 
 public interface ClassObjects {
     HomePage homepage = new HomePage();
@@ -12,5 +9,7 @@ public interface ClassObjects {
     SignupPage signuppage = new SignupPage();
     LoginPage loginpage = new LoginPage();
     DashboardPage dashboardpage = new DashboardPage();
+    leftMenuTabs leftmenutabs =  new leftMenuTabs();
+    editProfilePage editprofilepage = new editProfilePage();
 
 }

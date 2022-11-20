@@ -23,6 +23,9 @@ public class DashboardPage extends TestSetup {
     })
     List<WebElement> dashboardLinks;
 
+    @FindBy(xpath = "//button[@class='logout-btn btn-log-resp']")
+    public WebElement logoutBtn;
+
     public void verifyDashboardTitle(){
         elementIsPresent(dashboardTitle);
     }
@@ -44,5 +47,8 @@ public class DashboardPage extends TestSetup {
             System.out.println(number[i]);
         }
         }
+        public void verifyLogoutBtn(){
+        clickOnElement(logoutBtn);
+    }
     }
 

@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite"><test verbose="2" preserve-order="true" name="E:/Automation and testing/Sourabh/TestSeleniumWebDriver">
+<suite name="All Test Suite">
     <listeners>
         <listener class-name="Utility.ITestListener"/>
     </listeners>
-    <test name="Test">
+    <test verbose="2" preserve-order="true" name="Regression test">
     <classes>
-
-       <!-- <class name="TestHomePage"></class>-->
-        <!--<class name="TestSignupPage"></class>-->
-        <!--<class name="TestLoginPage"></class>-->
-        <class name="TestDashboardPage"/>
+        <class name="TestEditProfile"></class>
+        <class name="Testlogout"></class>
     </classes>
-</test>
+    </test>
 </suite>

@@ -10,14 +10,14 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- TestHomePage -->
-      <class name="TestLoginPage">
+      <class name="TestLogin">
         <methods>
           <include name="testLoginFunctionalityWithValidCredentials" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="testLoginFunctionalityWithInvalidCredentials" invocation-numbers="0"/>
         </methods>
-      </class> <!-- TestLoginPage -->
+      </class> <!-- TestLogin -->
       <class name="TestSignupPage">
         <methods>
           <include name="tearDown"/>
